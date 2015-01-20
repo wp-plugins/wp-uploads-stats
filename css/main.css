@@ -1,0 +1,42 @@
+/* modules wrapper */
+.wp-uploads-stats-modules { position: relative; margin: 20px 0; }
+
+/* general module styles */
+.wp-uploads-stats-module { position: absolute; width: 300px; background: #fff; border: 1px solid #d9d9d9;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.04);
+	-moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.04);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.04);
+}
+.wp-uploads-stats-module .tl { text-align: left; }
+.wp-uploads-stats-module .tr { text-align: right; }
+.wp-uploads-stats-module .tc { text-align: center; }
+
+/* module head */
+.wp-uploads-stats-module h3 { margin: 0; padding: 26px 0; text-align: center; background: #eaeaea; border-bottom: 1px solid #d9d9d9; }
+.wp-uploads-stats-module .wpus-icon { width: 20px; height: 20px; position: absolute; top: 2px; background: #999; color: #fff; display: block; }
+.wp-uploads-stats-module .wpus-icon.toggle { right: 2px; }
+.wp-uploads-stats-module .wpus-icon.drag-handle { right: 24px; cursor: move; }
+
+/* module body - tables */
+.wp-uploads-stats-module table { width: 100%; border-spacing: 0; }
+.wp-uploads-stats-module thead th,
+.wp-uploads-stats-module tbody th.heading { border-bottom: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9; background: #eaeaea; font-size: 14px; position: relative; }
+.wp-uploads-stats-module tbody th.heading { border-left: 0; }
+.wp-uploads-stats-module tbody tr + tr th.heading { border-top: 1px solid #d9d9d9; }
+.wp-uploads-stats-module thead th:first-child { border-left: 0; }
+.wp-uploads-stats-module thead th.sortable { padding-right: 25px; cursor: pointer; }
+.wp-uploads-stats-module thead th.sortable:hover { background: #e0e0e0; }
+.wp-uploads-stats-module thead th.sortable-active:after { content: ''; width: 0; height: 0; position: absolute; top: 50%; right: 5px; margin-top: -3px; }
+.wp-uploads-stats-module thead th.sortable-asc:after,
+.wp-uploads-stats-module thead th.sortable-desc:after { border-left: 5px solid transparent; border-right: 5px solid transparent; }
+.wp-uploads-stats-module thead th.sortable-asc:after { border-bottom: 5px solid black; }
+.wp-uploads-stats-module thead th.sortable-desc:after { border-top: 5px solid black; }
+.wp-uploads-stats-module th,
+.wp-uploads-stats-module td { padding: 5px 8px; }
+.wp-uploads-stats-module th { text-align: left; }
+.wp-uploads-stats-module td { text-align: right; }
+.wp-uploads-stats-module tr:nth-child(even) { background: #f1f1f1; }
+
+/* module body - charts */
+.wp-uploads-stats-module-chart { text-align: center; }
+.wp-uploads-stats-module-chart canvas { margin: 10px 0; }
